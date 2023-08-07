@@ -1,0 +1,92 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Exercício 13</title>
+    
+    <link rel="stylesheet" type="text/css" href="p1.css">
+</head>
+<body>
+
+    <div class="h">
+        <h1>Exercício 13</h1>
+    </div>
+
+    <div class="cont">
+
+        <div class="sidenav left">
+            <a href="exer1.html">exercício 1</a>
+            <a href="exer2.html">exercício 2</a>
+            <a href="exer3.html">exercício 3</a>
+            <a href="exer4.html">exercício 4</a>
+            <a href="exer5.html">exercício 5</a>
+            <a href="exer6.html">exercício 6</a>
+            <a href="exer7.html">exercício 7</a>
+            <a href="exer8.html">exercício 8</a>
+            <a href="exer9.html">exercício 9</a>
+            <a href="exer10terminar.html">exercício 10</a>
+            <a href="exer11.html">exercício 11</a>
+            <a href="exer12.html">exercício 12</a>
+            <a href="exer13.html">exercício 13</a>
+            <a href="exer14.html">exercício 14</a>
+            <a href="exer15.html">exercício 15</a>
+            <a href="exer16.html">exercício 16</a>
+            <a href="exer17.html">exercício 17</a>
+            <a href="exer18.html">exercício 18</a>
+            <a href="exer19.html">exercício 19</a>
+            <a href="exer20.html">exercício 20</a>
+          </div>
+
+          <div class="col">
+        <script lang="JavaScript">
+
+            var a, b, c, bc, ca, ab;
+
+            alert("Informe o valor dos três lados do triângulo");
+            
+            a = parseFloat(window.prompt("Qual o valor do 1° lado?","0"));
+
+            b = parseFloat(window.prompt("Qual o valor do 2° lado?","0"));
+
+            c = parseFloat(window.prompt("Qual o valor do 3° lado?","0"));
+
+            document.write("<h4 class='c'>valor do 1° lado:  " + a + "</h4>");
+
+            document.write("<h4 class='c'>valor do 2° lado:  " + b + "</h4>");
+
+            document.write("<h4 class='c'>valor do 3° lado:  " + c + "</h4>");
+
+            bc = b + c;
+
+            ca = c + a;
+
+            ab = a + b;
+
+            if((a < bc) && (b < ca) && (c < ab))
+            {
+                if((a == b) && (b == c))
+                {
+                    document.write("<h4 class='c'>O triângulo é equilátero</h4>");
+                }
+                else
+                {
+                    if((a != b) && (b != c) && (c != a))
+                    {
+                        document.write("<h4 class='c'>O triângulo é escaleno</h4>");
+                    }
+                    else
+                    {
+                        document.write("<h4 class='c'>O triângulo é isóceles</h4>");
+                    }
+                }
+            }
+            else
+            {
+                document.write("<h4 class='c'>Não existe um triângulo, verifique os dados</h4>");
+            }
+        </script>
+          </div>
+    </div>
+
+
+</body>
+</html>
